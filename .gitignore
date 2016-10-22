@@ -1,0 +1,6 @@
+*.elf
+*.velf
+*.vpk
+*.o
+eboot.bin
+param.sfo

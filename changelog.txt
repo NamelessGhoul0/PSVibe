@@ -1,0 +1,7 @@
+v1
+ - Initial release
+
+v2 - final
+ - Added proper controller type detection
+ - Fixed DS3 range
+ - Now displays vibration intensity as a percentage
