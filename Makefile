@@ -22,6 +22,7 @@ eboot.bin: $(TARGET).velf
 	vita-make-fself -s $< eboot.bin
 
 $(TARGET).velf: $(TARGET).elf
+	$(PREFIX)-strip -g $<
 	vita-elf-create $< $@
 
 $(TARGET).elf: $(OBJS)
