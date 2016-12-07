@@ -19,7 +19,7 @@ $(TARGET).vpk: eboot.bin
 	-a res/template.xml=sce_sys/livearea/contents/template.xml $@
 
 eboot.bin: $(TARGET).velf
-	vita-make-fself -s $< eboot.bin
+	vita-make-fself -c -s $< eboot.bin
 
 $(TARGET).velf: $(TARGET).elf
 	$(PREFIX)-strip -g $<
